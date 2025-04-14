@@ -36,10 +36,8 @@ themes/
     ├── vite.config.js           # Configuration file for Vite, a fast frontend build tool.
 ```
 ## 🚀 Getting Started
-1. Clone this repository to your `themes` folder.
-```bash
-git clone git@github.com:chrischase011/wordpress-vue-theme-boilerplate.git
-```
+1. Download and put the files inside your `themes` folder.
+[Download Latest Release](https://github.com/chrischase011/wordpress-vue-theme-boilerplate/releases)
 
 2. Install Dependencies
 ```bash
