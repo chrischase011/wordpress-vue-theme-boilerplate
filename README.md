@@ -27,11 +27,13 @@ themes/
     │   ├── router/              # Vue Router setup
     │   └── stores/              # Pinia stores
     │       └── wp/
-    ├── App.vue                 # Root Vue component
-    ├── main.js                 # Vue app entry point
-    ├── style.css               # Global styles
-    ├── index.html              # Entry HTML for the Vue app
-    ├── *.php                   # WordPress theme files (header.php, footer.php, etc.)
+    │   ├─── App.vue             # Root Vue component
+    │   ├─── main.js             # Vue app entry point
+    │   └─── style.css           # Global styles
+    ├── index.html               # Entry HTML for the Vue app
+    ├── *.php                    # WordPress theme files (header.php, footer.php, etc.)
+    ├── style.css                # Wordpress Global styles + Theme metadata
+    ├── vite.config.js           # Configuration file for Vite, a fast frontend build tool.
 ```
 ## 🚀 Getting Started
 1. Clone this repository to your `themes` folder.
