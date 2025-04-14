@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/* You can define custom @theme here */
+/* @theme {
+  --color-primary: #7b1217;
+  --color-primary-2: #680F13;
+  --color-secondary: #fddd64;
+  --color-info: #21a2a6;
+  --color-success: #a4ce5e;
+  --color-danger: #e74c3c;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.aligncenter,
+.wp-block-image {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wp-block-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  display: inline-block;
+  float: left;
+  margin-right: 1em;
+  /* Adjust as needed */
+}
+
+.alignright {
+  display: inline-block;
+  float: right;
+  margin-left: 1em;
+  /* Adjust as needed */
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* General Styling for wp-block-heading */
+.wp-block-heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  color: #222;
+  /* Adjust as needed */
+  margin-bottom: 1rem;
+}
+
+/* Specific Styles for Headings */
+.wp-block-heading h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #111;
+}
+
+h2.wp-block-heading {
+  font-size: 2rem;
+  line-height: 1.3;
+  color: #222;
+}
+
+.wp-block-heading h3 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.wp-block-heading h4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.wp-block-heading h5 {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.wp-block-heading h6 {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .wp-block-heading h1 {
+    font-size: 2rem;
+  }
+
+  .wp-block-heading h2 {
+    font-size: 1.75rem;
+  }
+
+  .wp-block-heading h3 {
+    font-size: 1.5rem;
+  }
+
+  .wp-block-heading h4 {
+    font-size: 1.25rem;
+  }
+
+  .wp-block-heading h5 {
+    font-size: 1.1rem;
+  }
+
+  .wp-block-heading h6 {
+    font-size: 0.9rem;
+  }
+}
