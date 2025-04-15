@@ -13,8 +13,6 @@ add_action('rest_api_init', function () {
         'callback' => 'rest_get_custom_logo',
         'permission_callback' => '__return_true',
     ]);
-
-    // Register the custom REST API endpoint for the site title
 });
 
 // Callback function to return the site title
