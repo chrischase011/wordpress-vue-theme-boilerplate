@@ -17,7 +17,7 @@ This boilerplate allows you to use Vue as the front-end for your WordPress theme
 - 🎨 Style with Tailwind CSS, standard CSS or your preferred CSS preprocessor
 
 ## 📋 Requirements
-- WordPress 6.7+ and PHP 8.2+
+- WordPress 6.7+ and PHP 8.1+
 - Node.js 20+
 - Pretty permalinks (Settings > Permalinks, anything except "Plain")
 
