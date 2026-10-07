@@ -13,9 +13,9 @@ const app = createApp(App);
 // app.component('Navigation', Navigation)
 // app.component('Pagination', Pagination)
 
-// Use router and pinia
-app.use(router)
+// Use pinia and router
 app.use(pinia)
+app.use(router)
 
 // Mount the app
 app.mount('#app')
