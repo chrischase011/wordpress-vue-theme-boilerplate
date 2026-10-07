@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
 $labels = array(
     'name'                  => _x('Custom Post Type', 'Post Type General Name', 'text_domain'),
     'singular_name'         => _x('Custom Post Type Section', 'Post Type Singular Name', 'text_domain'),
@@ -40,7 +44,7 @@ $args = array(
     // 'show_in_menu'          => 'home-menu', // Use a custom menu slug or 'edit.php' for the default menu
     'menu_position'         => 26, // Set the position in the admin menu (26 is below Posts)
     // 'menu_icon'             => 'dashicons-format-image', // Use a custom icon or a dashicon
-    // 'show_in_rest'         => true, // Set to true to show in REST API
+    'show_in_rest'          => true, // Set to true to show in REST API (needed to load it from Vue)
     'show_in_admin_bar'     => true, // Set to true to show in admin bar
     'show_in_nav_menus'     => true, // Set to true to show in navigation menus
     'can_export'            => true, // Set to true to allow export

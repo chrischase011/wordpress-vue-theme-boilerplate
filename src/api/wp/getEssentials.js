@@ -1,16 +1,14 @@
-import { settings } from '../../settings';
-import { useFetch } from '@vueuse/core'
+import { api } from '../index'
 
-export const useGetLogo = async () => {
+// Already loaded in the site store, use these to refresh
 
-    const { isFetching, error, data, } = await useFetch(`${settings.API_BASE_PATH}/logo`);
+export const getSiteInfo = (options = {}) => {
 
-    return { isFetching, error, data, };
+    return api.get('site', {}, options);
 }
 
-export const useGetSiteTitle = async () => {
-    
-    const { isFetching, error, data, } = await useFetch(`${settings.API_BASE_PATH}/site-title`);
+// location: 'primary' or 'footer'
+export const getMenu = (location, options = {}) => {
 
-    return { isFetching, error, data, };
+    return api.get(`menus/${location}`, {}, options);
 }

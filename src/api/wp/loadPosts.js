@@ -1,9 +1,12 @@
-import { settings } from '../../settings';
-import { useFetch } from '@vueuse/core'
+import { wp } from '../index'
 
-export const usePosts = async () => {
+// Extra params go to the REST API (search, categories, ...)
+export const getPosts = ({ page = 1, perPage = 10, ...params } = {}, options = {}) => {
 
-    const { isFetching, error, data, } = await useFetch(`${settings.API_BASE_PATH}/posts?per_page=5`);
+    return wp.paginate('posts', { page, per_page: perPage, _embed: 'wp:featuredmedia,author', ...params }, options);
+}
 
-    return { isFetching, error, data, };
+export const getPostsBySlug = (slug, options = {}) => {
+
+    return wp.get('posts', { slug, _embed: 'wp:featuredmedia,author' }, options);
 }
