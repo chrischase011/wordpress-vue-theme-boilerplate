@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 node_modules
+
+# Written by the Vite dev server while `npm run dev` is running
+.vite-hot
